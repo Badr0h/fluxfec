@@ -1,0 +1,21 @@
+{
+  "siren": "123456789",
+  "raisonSociale": "Boutique Exemple SAS",
+  "clotureExercice": "2026-12-31",
+  "journaux": {
+    "ventes": { "code": "VT", "libelle": "Ventes Stripe" },
+    "stripe": { "code": "ST", "libelle": "Stripe" }
+  },
+  "comptes": {
+    "clients": { "numero": "411000", "libelle": "Clients" },
+    "ventes": { "numero": "707000", "libelle": "Ventes de marchandises" },
+    "tvaCollectee": { "numero": "445710", "libelle": "TVA collectée" },
+    "stripe": { "numero": "517100", "libelle": "Stripe" },
+    "virementsInternes": { "numero": "580000", "libelle": "Virements internes Stripe" },
+    "fraisStripe": { "numero": "627800", "libelle": "Frais Stripe" },
+    "attente": { "numero": "471000", "libelle": "Compte d'attente" }
+  },
+  "clientAuxiliaire": { "numero": "CSTRIPE", "libelle": "Clients Stripe" },
+  "tauxTvaDefaut": 20,
+  "detail": "par_operation"
+}

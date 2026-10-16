@@ -1,0 +1,21 @@
+balance_transaction_id,created,available_on,currency,gross,fee,net,reporting_category,source_id,description,customer_facing_amount,customer_facing_currency,automatic_payout_id
+txn_3Qx0001Demo,2026-09-01 12:47:12,2026-09-01 00:00:00,eur,49.00,0.99,48.01,charge,ch_3Qx0002Demo,"Commande #1001",49.00,eur,po_3Qx0023Demo
+txn_3Qx0003Demo,2026-09-02 13:54:12,2026-09-02 00:00:00,eur,89.90,1.60,88.30,charge,ch_3Qx0004Demo,"Commande #1002",89.90,eur,po_3Qx0023Demo
+txn_3Qx0005Demo,2026-09-03 14:01:12,2026-09-03 00:00:00,eur,24.00,0.61,23.39,charge,ch_3Qx0006Demo,"Commande #1003",24.00,eur,po_3Qx0023Demo
+txn_3Qx0007Demo,2026-09-04 15:08:12,2026-09-04 00:00:00,eur,129.00,2.19,126.81,charge,ch_3Qx0008Demo,"Commande #1004",129.00,eur,po_3Qx0023Demo
+txn_3Qx0009Demo,2026-09-05 16:15:12,2026-09-05 00:00:00,eur,59.00,1.14,57.86,charge,ch_3Qx0010Demo,"Commande #1005",59.00,eur,po_3Qx0023Demo
+txn_3Qx0011Demo,2026-09-06 17:22:12,2026-09-06 00:00:00,eur,34.50,0.77,33.73,charge,ch_3Qx0012Demo,"Commande #1006",34.50,eur,po_3Qx0023Demo
+txn_3Qx0013Demo,2026-09-08 16:42:05,2026-09-08 00:00:00,eur,55.40,2.05,53.35,charge,ch_3Qx0014Demo,"Commande #1007",65.00,usd,po_3Qx0023Demo
+txn_3Qx0015Demo,2026-09-09 10:36:12,2026-09-09 00:00:00,eur,199.00,3.24,195.76,charge,ch_3Qx0016Demo,"Commande #1008",199.00,eur,po_3Qx0023Demo
+txn_3Qx0017Demo,2026-09-10 09:30:00,2026-09-10 00:00:00,eur,-34.50,0.00,-34.50,refund,re_3Qx0018Demo,"Remboursement commande #1006",-34.50,eur,po_3Qx0023Demo
+txn_3Qx0019Demo,2026-09-11 11:43:12,2026-09-11 00:00:00,eur,49.00,0.99,48.01,charge,ch_3Qx0020Demo,"Commande #1009",49.00,eur,po_3Qx0023Demo
+txn_3Qx0021Demo,2026-09-12 09:30:00,2026-09-12 00:00:00,eur,-2.10,0.00,-2.10,fee,bfee_3Qx0022Demo,"Billing - Usage Fee (2026-08)",,,po_3Qx0023Demo
+txn_3Qx0025Demo,2026-09-16 12:50:12,2026-09-16 00:00:00,eur,74.90,1.37,73.53,charge,ch_3Qx0026Demo,"Commande #1010",74.90,eur,po_3Qx0043Demo
+txn_3Qx0027Demo,2026-09-17 13:57:12,2026-09-17 00:00:00,eur,19.90,0.55,19.35,charge,ch_3Qx0028Demo,"Commande #1011 – “Café” ☕",19.90,eur,po_3Qx0043Demo
+txn_3Qx0029Demo,2026-09-18 09:30:00,2026-09-18 00:00:00,eur,-89.90,20.00,-109.90,dispute,dp_3Qx0030Demo,"Contestation commande #1002",-89.90,eur,po_3Qx0043Demo
+txn_3Qx0031Demo,2026-09-20 14:04:12,2026-09-20 00:00:00,eur,89.90,1.60,88.30,charge,ch_3Qx0032Demo,"Commande #1012",89.90,eur,po_3Qx0043Demo
+txn_3Qx0033Demo,2026-09-22 15:11:12,2026-09-22 00:00:00,eur,45.00,0.93,44.07,charge,ch_3Qx0034Demo,"Commande #1013",45.00,eur,po_3Qx0043Demo
+txn_3Qx0035Demo,2026-09-23 09:30:00,2026-09-23 00:00:00,eur,-3.00,0.00,-3.00,adjustment,adj_3Qx0036Demo,"Ajustement de solde",,,po_3Qx0043Demo
+txn_3Qx0037Demo,2026-09-24 16:18:12,2026-09-24 00:00:00,eur,249.00,3.99,245.01,charge,ch_3Qx0038Demo,"Commande #1014",249.00,eur,po_3Qx0043Demo
+txn_3Qx0039Demo,2026-09-26 17:25:12,2026-09-26 00:00:00,eur,39.00,0.84,38.16,charge,ch_3Qx0040Demo,"Commande #1015",39.00,eur,po_3Qx0043Demo
+txn_3Qx0041Demo,2026-09-27 18:32:12,2026-09-27 00:00:00,eur,64.00,1.21,62.79,charge,ch_3Qx0042Demo,"Commande #1016",64.00,eur,po_3Qx0043Demo

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sortir l'export Stripe d'un client : FluxFEC</title>
+  <meta name="description" content="Les deux exports CSV Stripe à télécharger pour obtenir le FEC d'un dossier, et comment l'importer dans ACD, Cegid, MyUnisoft ou Sage.">
+  <link rel="canonical" href="https://fluxfec.vercel.app/export-stripe.html">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="/">FluxFEC</a>
+      <nav aria-label="Page">
+        <a href="/#arret">Projet arrêté</a>
+      </nav>
+    </div>
+  </header>
+  <main class="legal">
+    <h1>Sortir l'export Stripe d'un client</h1>
+    <p class="note">Projet arrêté le 16 octobre 2026&nbsp;: cette page reste en ligne comme documentation, aucun envoi n'est traité.</p>
+    <p>Deux fichiers CSV sur le même mois, depuis le tableau de bord Stripe du client. Le client peut les sortir lui-même, ou vous les envoyer si vous avez un accès en lecture.</p>
+
+    <h2>1. L'activité du solde</h2>
+    <p><strong>Rapports &gt; Solde &gt; Balance change from activity</strong>, puis Télécharger, format <strong>Itemized</strong>.</p>
+    <p>Dans « Colonnes », ajoutez si possible <code>source_id</code>, <code>customer_facing_amount</code>, <code>customer_facing_currency</code> et <code>automatic_payout_id</code>. Sans elles, le fichier sort quand même, mais le lettrage des remboursements et des litiges est moins précis, et le rapport le signale.</p>
+
+    <h2>2. Les virements</h2>
+    <p><strong>Rapports &gt; Solde &gt; Payouts</strong>, puis Télécharger, format <strong>Itemized</strong>. Ce rapport contient les virements vers la banque, absents du premier.</p>
+
+    <h2>Fuseau horaire</h2>
+    <p>Choisissez Europe/Paris. Sinon, une vente de 23 h 30 le 30 tombe le 1er du mois suivant.</p>
+
+    <h2>Données personnelles</h2>
+    <p>Vous pouvez vider la colonne <code>description</code> &nbsp;: seuls les montants, les dates et les catégories Stripe servent au calcul.</p>
+
+    <h2>Importer le FEC reçu</h2>
+    <ul>
+      <li><strong>ACD</strong>&nbsp;: Outils &gt; Importation &gt; Importation FEC, avec « Rupture par pièce ».</li>
+      <li><strong>Cegid Loop</strong>&nbsp;: import FEC&nbsp;; le lettrage est repris.</li>
+      <li><strong>MyUnisoft</strong>&nbsp;: Imports &gt; Import FEC, sur l'exercice concerné.</li>
+      <li><strong>Sage</strong>&nbsp;: import FEC sur un exercice ouvert, journaux créés au préalable.</li>
+      <li><strong>Quadra, Isacompta, Inqom</strong>&nbsp;: import FEC standard, validé avec vous au premier dossier.</li>
+    </ul>
+    <p>Importez chaque fichier une seule fois&nbsp;: la plupart des logiciels ajoutent les écritures en double si on réimporte.</p>
+
+  </main>
+  <footer class="site-footer">
+    <div class="bar">
+      <ul class="footer-links">
+        <li><a href="/">FluxFEC</a></li>
+        <li><a href="https://github.com/Badr0h/fluxfec">Code source</a></li>
+        <li><a href="/mentions-legales.html">Mentions légales</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+node_modules/
+moteur/out/
+moteur/coverage/
+prospection/
+Claude outputs/
+.cursor/

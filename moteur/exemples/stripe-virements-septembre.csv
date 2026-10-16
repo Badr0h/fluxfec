@@ -1,0 +1,3 @@
+balance_transaction_id,effective_at,currency,gross,fee,net,reporting_category,description,payout_id,payout_status,payout_expected_arrival_date
+txn_3Qx0024Demo,2026-09-15 06:00:00,eur,638.62,0.00,638.62,payout,STRIPE PAYOUT,po_3Qx0023Demo,paid,2026-09-16
+txn_3Qx0044Demo,2026-09-29 06:00:00,eur,458.31,0.00,458.31,payout,STRIPE PAYOUT,po_3Qx0043Demo,paid,2026-09-30

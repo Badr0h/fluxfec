@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FluxFEC : l'export Stripe de vos clients en FEC prêt à importer</title>
+  <meta name="description" content="Pour les cabinets d'expertise comptable : l'export Stripe d'un dossier devient un FEC détaillé, lettré et contrôlé, à importer dans ACD, Cegid, MyUnisoft ou Sage. Projet arrêté en octobre 2026, conservé en démonstration.">
+  <link rel="canonical" href="https://fluxfec.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="FluxFEC : l'export Stripe de vos clients en FEC prêt à importer">
+  <meta property="og:description" content="Une ligne « STRIPE » sur le relevé, le détail dans le FEC : ventes au brut, TVA, frais en 627, virements en 58 lettrés avec la banque.">
+  <meta property="og:url" content="https://fluxfec.vercel.app/">
+  <meta property="og:image" content="https://fluxfec.vercel.app/rapport.png">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FluxFEC",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Conversion de l'export CSV Stripe en fichier des écritures comptables (FEC) pour les cabinets d'expertise comptable."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="/">FluxFEC</a>
+      <nav aria-label="Page">
+        <a href="#journal">Le FEC</a>
+        <a href="#exemple">Exemple</a>
+        <a class="nav-cta" href="#arret">Projet arrêté</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Une ligne sur le relevé. Le détail dans le FEC.</h1>
+        <p class="lead">Quand un client encaisse par Stripe, la banque ne montre qu'un virement net. FluxFEC part de l'export Stripe et rend chaque vente, chaque frais et chaque remboursement en écritures prêtes à importer dans ACD, Cegid, MyUnisoft ou Sage.</p>
+        <div class="actions">
+          <a class="button" href="/exemple/rapport.html">Voir un mois traité</a>
+          <a class="text-link" href="#arret">Projet arrêté en octobre 2026</a>
+        </div>
+        <p class="proof">Moteur testé par 90 tests automatisés. Chaque FEC est relu au format de l'article A47 A-1 avant de sortir.</p>
+      </div>
+
+      <figure class="decompose" aria-labelledby="decompose-legende">
+        <div class="releve-ligne">
+          <span class="releve-date">16/09</span>
+          <span class="releve-lib">STRIPE PAYMENTS</span>
+          <span class="releve-montant num">638,62&nbsp;€</span>
+        </div>
+        <p class="decompose-intro">Ce qu'il y a derrière, d'après l'export Stripe&nbsp;:</p>
+        <table class="ruban">
+          <tbody>
+            <tr><th scope="row">9 ventes, au brut</th><td class="num">688,80</td></tr>
+            <tr><th scope="row">1 remboursement</th><td class="num">−34,50</td></tr>
+            <tr><th scope="row">Commissions Stripe</th><td class="num">−13,58</td></tr>
+            <tr><th scope="row">Autre frais Stripe</th><td class="num">−2,10</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><th scope="row">Virement reçu</th><td class="num">638,62</td></tr>
+          </tfoot>
+        </table>
+        <figcaption id="decompose-legende">Rapproché avec le relevé, au centime. Mois de démonstration, données fictives.</figcaption>
+      </figure>
+    </section>
+
+    <section class="band" id="journal" aria-labelledby="journal-titre">
+      <div class="wrap split">
+        <div class="split-text">
+          <h2 id="journal-titre">Ce que vous importez</h2>
+          <p>La vente au brut avec sa TVA, l'encaissement net avec la commission en 627, puis le virement vers la banque par le 58. La vente et son encaissement sont lettrés&nbsp;; le 58 se lettre avec la ligne du relevé.</p>
+          <p>Les comptes et les journaux sont ceux du dossier&nbsp;: vous les réglez une fois, ils sont repris chaque mois.</p>
+        </div>
+        <figure class="listing">
+          <figcaption>
+            <span>Commande #1001, carte, 49,00&nbsp;€</span>
+            <span class="equal">Débit = crédit</span>
+          </figcaption>
+          <div class="listing-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Date</th>
+                  <th scope="col">Jnl</th>
+                  <th scope="col">Compte</th>
+                  <th scope="col" class="num">Débit</th>
+                  <th scope="col" class="num">Crédit</th>
+                  <th scope="col">Let.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>01/09</td><td>VT</td><td>411000 <span class="aux">Clients Stripe</span></td><td class="num">49,00</td><td class="num"></td><td class="let">AAA</td></tr>
+                <tr><td>01/09</td><td>VT</td><td>707000 <span class="aux">Ventes</span></td><td class="num"></td><td class="num">40,83</td><td></td></tr>
+                <tr><td>01/09</td><td>VT</td><td>445710 <span class="aux">TVA collectée</span></td><td class="num"></td><td class="num">8,17</td><td></td></tr>
+              </tbody>
+              <tbody>
+                <tr><td>01/09</td><td>ST</td><td>517100 <span class="aux">Stripe</span></td><td class="num">48,01</td><td class="num"></td><td></td></tr>
+                <tr><td>01/09</td><td>ST</td><td>627800 <span class="aux">Frais Stripe</span></td><td class="num">0,99</td><td class="num"></td><td></td></tr>
+                <tr><td>01/09</td><td>ST</td><td>411000 <span class="aux">Clients Stripe</span></td><td class="num"></td><td class="num">49,00</td><td class="let">AAA</td></tr>
+              </tbody>
+              <tbody>
+                <tr><td>15/09</td><td>ST</td><td>580000 <span class="aux">Virements internes</span></td><td class="num">638,62</td><td class="num"></td><td></td></tr>
+                <tr><td>15/09</td><td>ST</td><td>517100 <span class="aux">Stripe</span></td><td class="num"></td><td class="num">638,62</td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="comparer-titre">
+      <div class="wrap">
+        <h2 id="comparer-titre">Un convertisseur traduit. FluxFEC comptabilise.</h2>
+        <p class="section-lead">Les convertisseurs Stripe vers FEC existent. La différence se voit au moment où le fichier passe la révision du cabinet.</p>
+        <div class="compare-scroll">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Schéma affiché par un convertisseur du marché</th>
+                <th scope="col">FluxFEC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">La vente</th><td data-label="Convertisseur">Brut au 706, TVA non séparée</td><td data-label="FluxFEC">HT au 707, TVA au 44571, client au 411</td></tr>
+              <tr><th scope="row">Le virement</th><td data-label="Convertisseur">Directement en banque (512)</td><td data-label="FluxFEC">Par le 58, à lettrer avec le relevé</td></tr>
+              <tr><th scope="row">Un ajustement Stripe</th><td data-label="Convertisseur">Passé en ventes</td><td data-label="FluxFEC">Au 471, et signalé dans le rapport</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="compare-after">En plus, chez FluxFEC&nbsp;: chaque vente lettrée avec son encaissement, le compte Stripe vérifié à zéro, et des comptes, journaux et taux de TVA réglés par dossier.</p>
+      </div>
+    </section>
+
+    <section class="section" id="controles" aria-labelledby="controles-titre">
+      <div class="wrap split split-report">
+        <div class="split-text">
+          <h2 id="controles-titre">Un rapport pour la révision</h2>
+          <p>Avec chaque FEC, un rapport liste les contrôles passés et ce qui mérite un œil humain. Sur le mois de démonstration&nbsp;:</p>
+          <ul class="alertes">
+            <li><span class="tag">À vérifier</span> Paiement en dollars&nbsp;: régime de TVA à confirmer.</li>
+            <li><span class="tag">À vérifier</span> Litige de 89,90&nbsp;€&nbsp;: créance rouverte au 411.</li>
+            <li><span class="tag">À vérifier</span> Ajustement Stripe inconnu&nbsp;: 3,00&nbsp;€ au 471.</li>
+            <li><span class="tag tag-info">Info</span> Remboursement de 34,50&nbsp;€&nbsp;: avoir généré.</li>
+          </ul>
+        </div>
+        <figure class="report">
+          <a href="/exemple/rapport.html"><img src="/rapport.png" width="1280" height="900" alt="Rapport de contrôle FluxFEC sur un mois de démonstration : 39 écritures, contrôles au vert, 4 points à vérifier." loading="lazy"></a>
+          <figcaption>22 opérations Stripe, 39 écritures, 4 points à vérifier.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section band" id="exemple" aria-labelledby="exemple-titre">
+      <div class="wrap split">
+        <div class="split-text">
+          <h2 id="exemple-titre">Un mois complet, à ouvrir</h2>
+          <p>Septembre 2026 d'une boutique fictive, avec un paiement en dollars, un remboursement, un litige et un ajustement inconnu. Importez le FEC dans un dossier de test de votre logiciel pour juger chez vous.</p>
+        </div>
+        <ul class="fichiers">
+          <li>
+            <a href="/exemple/stripe-activite-septembre.csv" download>Export Stripe, activité du solde</a>
+            <span>Entrée, CSV</span>
+          </li>
+          <li>
+            <a href="/exemple/stripe-virements-septembre.csv" download>Export Stripe, virements</a>
+            <span>Entrée, CSV</span>
+          </li>
+          <li>
+            <a href="/exemple/123456789FEC20261231.txt" download>FEC généré, 39 écritures</a>
+            <span>Sortie, TXT au format DGFiP</span>
+          </li>
+          <li>
+            <a href="/exemple/rapport.html">Rapport de contrôle et journal détaillé</a>
+            <span>Sortie, page web</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="arret" aria-labelledby="arret-titre">
+      <div class="wrap narrow">
+        <h2 id="arret-titre">Projet arrêté</h2>
+        <p>FluxFEC a été testé auprès de cabinets d'expertise comptable en septembre et octobre 2026, puis arrêté le 16 octobre 2026 faute de demande. Aucun essai ni abonnement n'est proposé&nbsp;: n'envoyez pas d'export Stripe.</p>
+        <p>Le moteur (export Stripe vers FEC lettré et contrôlé, 90 tests) et cette page restent disponibles en démonstration.</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/Badr0h/fluxfec">Voir le code source</a>
+          <a class="text-link" href="/exemple/rapport.html">Voir un mois traité</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="questions">
+      <div class="wrap narrow">
+        <h2 id="questions">Questions</h2>
+        <div class="faq">
+          <details>
+            <summary>Faut-il un accès au compte Stripe du client&nbsp;?</summary>
+            <p>Non. Deux exports CSV suffisent&nbsp;: l'activité du solde et les virements, sur le même mois. Le client peut les sortir lui-même.</p>
+          </details>
+          <details>
+            <summary>Et l'autoliquidation de TVA sur les frais Stripe&nbsp;?</summary>
+            <p>Les frais sont facturés par Stripe Payments Europe, en Irlande. Aujourd'hui, FluxFEC passe les frais en 627 hors TVA&nbsp;; l'écriture d'autoliquidation (445662 / 4452) se passe sur la facture mensuelle de Stripe. Elle n'a pas été ajoutée avant l'arrêt du projet.</p>
+          </details>
+          <details>
+            <summary>Comment sont traités les litiges et les ventes en devise&nbsp;?</summary>
+            <p>Ils sont comptabilisés et signalés dans le rapport. Le compte client d'un litige reste ouvert. Une vente en dollars est marquée pour contrôle du régime de TVA.</p>
+          </details>
+          <details>
+            <summary>Et PayPal, Mollie, SumUp&nbsp;?</summary>
+            <p>Stripe uniquement.</p>
+          </details>
+          <details>
+            <summary>Le fichier a-t-il été importé dans un vrai logiciel&nbsp;?</summary>
+            <p>Il est validé sur des données de démonstration, au format DGFiP et selon les règles d'import d'ACD, Cegid, MyUnisoft et Sage. Aucun import réel n'a été fait avant l'arrêt du projet.</p>
+          </details>
+          <details>
+            <summary>Qui est derrière FluxFEC&nbsp;?</summary>
+            <p>Badreddine Oussaih, développeur et étudiant ingénieur. Le code est public sur <a href="https://github.com/Badr0h/fluxfec">GitHub</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="bar">
+      <ul class="footer-links">
+        <li>FluxFEC</li>
+        <li><a href="https://github.com/Badr0h/fluxfec">Code source</a></li>
+        <li><a href="/export-stripe.html">Sortir l'export Stripe</a></li>
+        <li><a href="/mentions-legales.html">Mentions légales</a></li>
+      </ul>
+      <p>Stripe est une marque de Stripe, Inc. FluxFEC n'est ni affilié ni approuvé par Stripe.</p>
+    </div>
+  </footer>
+</body>
+</html>

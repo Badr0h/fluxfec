@@ -1,0 +1,25 @@
+{
+  "name": "moteur",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Export Stripe vers écritures comptables (FEC) pour cabinets d'expertise comptable",
+  "type": "module",
+  "scripts": {
+    "demo": "tsx src/cli.ts --csv exemples/stripe-activite-septembre.csv --csv exemples/stripe-virements-septembre.csv --dossier exemples/dossier-exemple.json --sortie out/",
+    "exemple": "tsx scripts/generer-exemple.ts",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage --coverage.include=src/** --coverage.exclude=src/cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "csv-parse": "^7.0.3",
+    "iconv-lite": "^0.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "@vitest/coverage-v8": "^5.0.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.2"
+  }
+}

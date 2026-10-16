@@ -1,0 +1,113 @@
+JournalCode	JournalLib	EcritureNum	EcritureDate	CompteNum	CompteLib	CompAuxNum	CompAuxLib	PieceRef	PieceDate	EcritureLib	Debit	Credit	EcritureLet	DateLet	ValidDate	Montantdevise	Idevise
+VT	Ventes Stripe	VT000001	20260901	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0002Demo	20260901	Vente Commande #1001	49,00	0,00	AAA	20260901	20260901		
+VT	Ventes Stripe	VT000001	20260901	707000	Ventes de marchandises			ch_3Qx0002Demo	20260901	Vente Commande #1001	0,00	40,83			20260901		
+VT	Ventes Stripe	VT000001	20260901	445710	TVA collectée			ch_3Qx0002Demo	20260901	Vente Commande #1001	0,00	8,17			20260901		
+ST	Stripe	ST000001	20260901	517100	Stripe			ch_3Qx0002Demo	20260901	Encaissement Commande #1001	48,01	0,00			20260901		
+ST	Stripe	ST000001	20260901	627800	Frais Stripe			ch_3Qx0002Demo	20260901	Encaissement Commande #1001	0,99	0,00			20260901		
+ST	Stripe	ST000001	20260901	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0002Demo	20260901	Encaissement Commande #1001	0,00	49,00	AAA	20260901	20260901		
+VT	Ventes Stripe	VT000002	20260902	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0004Demo	20260902	Vente Commande #1002	89,90	0,00	AAB	20260902	20260902		
+VT	Ventes Stripe	VT000002	20260902	707000	Ventes de marchandises			ch_3Qx0004Demo	20260902	Vente Commande #1002	0,00	74,92			20260902		
+VT	Ventes Stripe	VT000002	20260902	445710	TVA collectée			ch_3Qx0004Demo	20260902	Vente Commande #1002	0,00	14,98			20260902		
+ST	Stripe	ST000002	20260902	517100	Stripe			ch_3Qx0004Demo	20260902	Encaissement Commande #1002	88,30	0,00			20260902		
+ST	Stripe	ST000002	20260902	627800	Frais Stripe			ch_3Qx0004Demo	20260902	Encaissement Commande #1002	1,60	0,00			20260902		
+ST	Stripe	ST000002	20260902	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0004Demo	20260902	Encaissement Commande #1002	0,00	89,90	AAB	20260902	20260902		
+VT	Ventes Stripe	VT000003	20260903	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0006Demo	20260903	Vente Commande #1003	24,00	0,00	AAC	20260903	20260903		
+VT	Ventes Stripe	VT000003	20260903	707000	Ventes de marchandises			ch_3Qx0006Demo	20260903	Vente Commande #1003	0,00	20,00			20260903		
+VT	Ventes Stripe	VT000003	20260903	445710	TVA collectée			ch_3Qx0006Demo	20260903	Vente Commande #1003	0,00	4,00			20260903		
+ST	Stripe	ST000003	20260903	517100	Stripe			ch_3Qx0006Demo	20260903	Encaissement Commande #1003	23,39	0,00			20260903		
+ST	Stripe	ST000003	20260903	627800	Frais Stripe			ch_3Qx0006Demo	20260903	Encaissement Commande #1003	0,61	0,00			20260903		
+ST	Stripe	ST000003	20260903	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0006Demo	20260903	Encaissement Commande #1003	0,00	24,00	AAC	20260903	20260903		
+VT	Ventes Stripe	VT000004	20260904	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0008Demo	20260904	Vente Commande #1004	129,00	0,00	AAD	20260904	20260904		
+VT	Ventes Stripe	VT000004	20260904	707000	Ventes de marchandises			ch_3Qx0008Demo	20260904	Vente Commande #1004	0,00	107,50			20260904		
+VT	Ventes Stripe	VT000004	20260904	445710	TVA collectée			ch_3Qx0008Demo	20260904	Vente Commande #1004	0,00	21,50			20260904		
+ST	Stripe	ST000004	20260904	517100	Stripe			ch_3Qx0008Demo	20260904	Encaissement Commande #1004	126,81	0,00			20260904		
+ST	Stripe	ST000004	20260904	627800	Frais Stripe			ch_3Qx0008Demo	20260904	Encaissement Commande #1004	2,19	0,00			20260904		
+ST	Stripe	ST000004	20260904	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0008Demo	20260904	Encaissement Commande #1004	0,00	129,00	AAD	20260904	20260904		
+VT	Ventes Stripe	VT000005	20260905	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0010Demo	20260905	Vente Commande #1005	59,00	0,00	AAE	20260905	20260905		
+VT	Ventes Stripe	VT000005	20260905	707000	Ventes de marchandises			ch_3Qx0010Demo	20260905	Vente Commande #1005	0,00	49,17			20260905		
+VT	Ventes Stripe	VT000005	20260905	445710	TVA collectée			ch_3Qx0010Demo	20260905	Vente Commande #1005	0,00	9,83			20260905		
+ST	Stripe	ST000005	20260905	517100	Stripe			ch_3Qx0010Demo	20260905	Encaissement Commande #1005	57,86	0,00			20260905		
+ST	Stripe	ST000005	20260905	627800	Frais Stripe			ch_3Qx0010Demo	20260905	Encaissement Commande #1005	1,14	0,00			20260905		
+ST	Stripe	ST000005	20260905	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0010Demo	20260905	Encaissement Commande #1005	0,00	59,00	AAE	20260905	20260905		
+VT	Ventes Stripe	VT000006	20260906	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0012Demo	20260906	Vente Commande #1006	34,50	0,00	AAF	20260906	20260906		
+VT	Ventes Stripe	VT000006	20260906	707000	Ventes de marchandises			ch_3Qx0012Demo	20260906	Vente Commande #1006	0,00	28,75			20260906		
+VT	Ventes Stripe	VT000006	20260906	445710	TVA collectée			ch_3Qx0012Demo	20260906	Vente Commande #1006	0,00	5,75			20260906		
+ST	Stripe	ST000006	20260906	517100	Stripe			ch_3Qx0012Demo	20260906	Encaissement Commande #1006	33,73	0,00			20260906		
+ST	Stripe	ST000006	20260906	627800	Frais Stripe			ch_3Qx0012Demo	20260906	Encaissement Commande #1006	0,77	0,00			20260906		
+ST	Stripe	ST000006	20260906	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0012Demo	20260906	Encaissement Commande #1006	0,00	34,50	AAF	20260906	20260906		
+VT	Ventes Stripe	VT000007	20260908	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0014Demo	20260908	Vente Commande #1007	55,40	0,00	AAG	20260908	20260908	65,00	USD
+VT	Ventes Stripe	VT000007	20260908	707000	Ventes de marchandises			ch_3Qx0014Demo	20260908	Vente Commande #1007	0,00	46,17			20260908		
+VT	Ventes Stripe	VT000007	20260908	445710	TVA collectée			ch_3Qx0014Demo	20260908	Vente Commande #1007	0,00	9,23			20260908		
+ST	Stripe	ST000007	20260908	517100	Stripe			ch_3Qx0014Demo	20260908	Encaissement Commande #1007	53,35	0,00			20260908		
+ST	Stripe	ST000007	20260908	627800	Frais Stripe			ch_3Qx0014Demo	20260908	Encaissement Commande #1007	2,05	0,00			20260908		
+ST	Stripe	ST000007	20260908	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0014Demo	20260908	Encaissement Commande #1007	0,00	55,40	AAG	20260908	20260908	-65,00	USD
+VT	Ventes Stripe	VT000008	20260909	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0016Demo	20260909	Vente Commande #1008	199,00	0,00	AAH	20260909	20260909		
+VT	Ventes Stripe	VT000008	20260909	707000	Ventes de marchandises			ch_3Qx0016Demo	20260909	Vente Commande #1008	0,00	165,83			20260909		
+VT	Ventes Stripe	VT000008	20260909	445710	TVA collectée			ch_3Qx0016Demo	20260909	Vente Commande #1008	0,00	33,17			20260909		
+ST	Stripe	ST000008	20260909	517100	Stripe			ch_3Qx0016Demo	20260909	Encaissement Commande #1008	195,76	0,00			20260909		
+ST	Stripe	ST000008	20260909	627800	Frais Stripe			ch_3Qx0016Demo	20260909	Encaissement Commande #1008	3,24	0,00			20260909		
+ST	Stripe	ST000008	20260909	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0016Demo	20260909	Encaissement Commande #1008	0,00	199,00	AAH	20260909	20260909		
+VT	Ventes Stripe	VT000009	20260910	411000	Clients	CSTRIPE	Clients Stripe	re_3Qx0018Demo	20260910	Avoir Remboursement commande #1006	0,00	34,50	AAI	20260910	20260910		
+VT	Ventes Stripe	VT000009	20260910	707000	Ventes de marchandises			re_3Qx0018Demo	20260910	Avoir Remboursement commande #1006	28,75	0,00			20260910		
+VT	Ventes Stripe	VT000009	20260910	445710	TVA collectée			re_3Qx0018Demo	20260910	Avoir Remboursement commande #1006	5,75	0,00			20260910		
+ST	Stripe	ST000009	20260910	517100	Stripe			re_3Qx0018Demo	20260910	Remboursement Remboursement commande #1006	0,00	34,50			20260910		
+ST	Stripe	ST000009	20260910	411000	Clients	CSTRIPE	Clients Stripe	re_3Qx0018Demo	20260910	Remboursement Remboursement commande #1006	34,50	0,00	AAI	20260910	20260910		
+VT	Ventes Stripe	VT000010	20260911	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0020Demo	20260911	Vente Commande #1009	49,00	0,00	AAJ	20260911	20260911		
+VT	Ventes Stripe	VT000010	20260911	707000	Ventes de marchandises			ch_3Qx0020Demo	20260911	Vente Commande #1009	0,00	40,83			20260911		
+VT	Ventes Stripe	VT000010	20260911	445710	TVA collectée			ch_3Qx0020Demo	20260911	Vente Commande #1009	0,00	8,17			20260911		
+ST	Stripe	ST000010	20260911	517100	Stripe			ch_3Qx0020Demo	20260911	Encaissement Commande #1009	48,01	0,00			20260911		
+ST	Stripe	ST000010	20260911	627800	Frais Stripe			ch_3Qx0020Demo	20260911	Encaissement Commande #1009	0,99	0,00			20260911		
+ST	Stripe	ST000010	20260911	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0020Demo	20260911	Encaissement Commande #1009	0,00	49,00	AAJ	20260911	20260911		
+ST	Stripe	ST000011	20260912	517100	Stripe			bfee_3Qx0022Demo	20260912	Frais Stripe Billing - Usage Fee (2026-08)	0,00	2,10			20260912		
+ST	Stripe	ST000011	20260912	627800	Frais Stripe			bfee_3Qx0022Demo	20260912	Frais Stripe Billing - Usage Fee (2026-08)	2,10	0,00			20260912		
+ST	Stripe	ST000012	20260915	517100	Stripe			po_3Qx0023Demo	20260915	Virement Stripe arrivée 16/09 po_3Qx0023Demo	0,00	638,62			20260915		
+ST	Stripe	ST000012	20260915	580000	Virements internes Stripe			po_3Qx0023Demo	20260915	Virement Stripe arrivée 16/09 po_3Qx0023Demo	638,62	0,00			20260915		
+VT	Ventes Stripe	VT000011	20260916	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0026Demo	20260916	Vente Commande #1010	74,90	0,00	AAK	20260916	20260916		
+VT	Ventes Stripe	VT000011	20260916	707000	Ventes de marchandises			ch_3Qx0026Demo	20260916	Vente Commande #1010	0,00	62,42			20260916		
+VT	Ventes Stripe	VT000011	20260916	445710	TVA collectée			ch_3Qx0026Demo	20260916	Vente Commande #1010	0,00	12,48			20260916		
+ST	Stripe	ST000013	20260916	517100	Stripe			ch_3Qx0026Demo	20260916	Encaissement Commande #1010	73,53	0,00			20260916		
+ST	Stripe	ST000013	20260916	627800	Frais Stripe			ch_3Qx0026Demo	20260916	Encaissement Commande #1010	1,37	0,00			20260916		
+ST	Stripe	ST000013	20260916	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0026Demo	20260916	Encaissement Commande #1010	0,00	74,90	AAK	20260916	20260916		
+VT	Ventes Stripe	VT000012	20260917	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0028Demo	20260917	Vente Commande #1011 - "Café"	19,90	0,00	AAL	20260917	20260917		
+VT	Ventes Stripe	VT000012	20260917	707000	Ventes de marchandises			ch_3Qx0028Demo	20260917	Vente Commande #1011 - "Café"	0,00	16,58			20260917		
+VT	Ventes Stripe	VT000012	20260917	445710	TVA collectée			ch_3Qx0028Demo	20260917	Vente Commande #1011 - "Café"	0,00	3,32			20260917		
+ST	Stripe	ST000014	20260917	517100	Stripe			ch_3Qx0028Demo	20260917	Encaissement Commande #1011 - "Café"	19,35	0,00			20260917		
+ST	Stripe	ST000014	20260917	627800	Frais Stripe			ch_3Qx0028Demo	20260917	Encaissement Commande #1011 - "Café"	0,55	0,00			20260917		
+ST	Stripe	ST000014	20260917	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0028Demo	20260917	Encaissement Commande #1011 - "Café"	0,00	19,90	AAL	20260917	20260917		
+ST	Stripe	ST000015	20260918	517100	Stripe			dp_3Qx0030Demo	20260918	Litige Contestation commande #1002	0,00	109,90			20260918		
+ST	Stripe	ST000015	20260918	627800	Frais Stripe			dp_3Qx0030Demo	20260918	Litige Contestation commande #1002	20,00	0,00			20260918		
+ST	Stripe	ST000015	20260918	411000	Clients	CSTRIPE	Clients Stripe	dp_3Qx0030Demo	20260918	Litige Contestation commande #1002	89,90	0,00			20260918		
+VT	Ventes Stripe	VT000013	20260920	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0032Demo	20260920	Vente Commande #1012	89,90	0,00	AAM	20260920	20260920		
+VT	Ventes Stripe	VT000013	20260920	707000	Ventes de marchandises			ch_3Qx0032Demo	20260920	Vente Commande #1012	0,00	74,92			20260920		
+VT	Ventes Stripe	VT000013	20260920	445710	TVA collectée			ch_3Qx0032Demo	20260920	Vente Commande #1012	0,00	14,98			20260920		
+ST	Stripe	ST000016	20260920	517100	Stripe			ch_3Qx0032Demo	20260920	Encaissement Commande #1012	88,30	0,00			20260920		
+ST	Stripe	ST000016	20260920	627800	Frais Stripe			ch_3Qx0032Demo	20260920	Encaissement Commande #1012	1,60	0,00			20260920		
+ST	Stripe	ST000016	20260920	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0032Demo	20260920	Encaissement Commande #1012	0,00	89,90	AAM	20260920	20260920		
+VT	Ventes Stripe	VT000014	20260922	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0034Demo	20260922	Vente Commande #1013	45,00	0,00	AAN	20260922	20260922		
+VT	Ventes Stripe	VT000014	20260922	707000	Ventes de marchandises			ch_3Qx0034Demo	20260922	Vente Commande #1013	0,00	37,50			20260922		
+VT	Ventes Stripe	VT000014	20260922	445710	TVA collectée			ch_3Qx0034Demo	20260922	Vente Commande #1013	0,00	7,50			20260922		
+ST	Stripe	ST000017	20260922	517100	Stripe			ch_3Qx0034Demo	20260922	Encaissement Commande #1013	44,07	0,00			20260922		
+ST	Stripe	ST000017	20260922	627800	Frais Stripe			ch_3Qx0034Demo	20260922	Encaissement Commande #1013	0,93	0,00			20260922		
+ST	Stripe	ST000017	20260922	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0034Demo	20260922	Encaissement Commande #1013	0,00	45,00	AAN	20260922	20260922		
+ST	Stripe	ST000018	20260923	517100	Stripe			adj_3Qx0036Demo	20260923	Stripe adjustment Ajustement de solde	0,00	3,00			20260923		
+ST	Stripe	ST000018	20260923	471000	Compte d'attente			adj_3Qx0036Demo	20260923	Stripe adjustment Ajustement de solde	3,00	0,00			20260923		
+VT	Ventes Stripe	VT000015	20260924	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0038Demo	20260924	Vente Commande #1014	249,00	0,00	AAO	20260924	20260924		
+VT	Ventes Stripe	VT000015	20260924	707000	Ventes de marchandises			ch_3Qx0038Demo	20260924	Vente Commande #1014	0,00	207,50			20260924		
+VT	Ventes Stripe	VT000015	20260924	445710	TVA collectée			ch_3Qx0038Demo	20260924	Vente Commande #1014	0,00	41,50			20260924		
+ST	Stripe	ST000019	20260924	517100	Stripe			ch_3Qx0038Demo	20260924	Encaissement Commande #1014	245,01	0,00			20260924		
+ST	Stripe	ST000019	20260924	627800	Frais Stripe			ch_3Qx0038Demo	20260924	Encaissement Commande #1014	3,99	0,00			20260924		
+ST	Stripe	ST000019	20260924	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0038Demo	20260924	Encaissement Commande #1014	0,00	249,00	AAO	20260924	20260924		
+VT	Ventes Stripe	VT000016	20260926	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0040Demo	20260926	Vente Commande #1015	39,00	0,00	AAP	20260926	20260926		
+VT	Ventes Stripe	VT000016	20260926	707000	Ventes de marchandises			ch_3Qx0040Demo	20260926	Vente Commande #1015	0,00	32,50			20260926		
+VT	Ventes Stripe	VT000016	20260926	445710	TVA collectée			ch_3Qx0040Demo	20260926	Vente Commande #1015	0,00	6,50			20260926		
+ST	Stripe	ST000020	20260926	517100	Stripe			ch_3Qx0040Demo	20260926	Encaissement Commande #1015	38,16	0,00			20260926		
+ST	Stripe	ST000020	20260926	627800	Frais Stripe			ch_3Qx0040Demo	20260926	Encaissement Commande #1015	0,84	0,00			20260926		
+ST	Stripe	ST000020	20260926	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0040Demo	20260926	Encaissement Commande #1015	0,00	39,00	AAP	20260926	20260926		
+VT	Ventes Stripe	VT000017	20260927	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0042Demo	20260927	Vente Commande #1016	64,00	0,00	AAQ	20260927	20260927		
+VT	Ventes Stripe	VT000017	20260927	707000	Ventes de marchandises			ch_3Qx0042Demo	20260927	Vente Commande #1016	0,00	53,33			20260927		
+VT	Ventes Stripe	VT000017	20260927	445710	TVA collectée			ch_3Qx0042Demo	20260927	Vente Commande #1016	0,00	10,67			20260927		
+ST	Stripe	ST000021	20260927	517100	Stripe			ch_3Qx0042Demo	20260927	Encaissement Commande #1016	62,79	0,00			20260927		
+ST	Stripe	ST000021	20260927	627800	Frais Stripe			ch_3Qx0042Demo	20260927	Encaissement Commande #1016	1,21	0,00			20260927		
+ST	Stripe	ST000021	20260927	411000	Clients	CSTRIPE	Clients Stripe	ch_3Qx0042Demo	20260927	Encaissement Commande #1016	0,00	64,00	AAQ	20260927	20260927		
+ST	Stripe	ST000022	20260929	517100	Stripe			po_3Qx0043Demo	20260929	Virement Stripe arrivée 30/09 po_3Qx0043Demo	0,00	458,31			20260929		
+ST	Stripe	ST000022	20260929	580000	Virements internes Stripe			po_3Qx0043Demo	20260929	Virement Stripe arrivée 30/09 po_3Qx0043Demo	458,31	0,00			20260929		
